@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sailing"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bLoginRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bLoginLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bLoginLogin"
+        android:layout_marginBottom="25dp"
+        android:text="Register"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bLoginLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bLoginRegister"
+        android:layout_alignLeft="@+id/etLoginPassword"
+        android:layout_alignRight="@+id/etLoginPassword"
+        android:text="Please Login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bLoginLogin"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+         
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvLoginPleaseLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Please Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLoginPleaseLogin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blackbuoy" />
+
+    <TextView
+        android:id="@+id/tvLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etLoginPassword"
+        android:layout_alignLeft="@+id/etLoginPassword"
+        android:layout_marginLeft="22dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLoginPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+
+      <requestFocus/>
+     </EditText>
+
+    <TextView
+        android:id="@+id/tvLoginUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvLoginPassword"
+        android:layout_centerVertical="true"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
